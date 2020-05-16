@@ -19,65 +19,84 @@
 const uint8_t colorMapArray[][3][12] PROGMEM = {
 // Map 0, Default
  {
-  {0, 10, 30,   20, 10, 0,   1, 0, 1,   1, 0, 0},   // Low intensity
-  {0, 20, 40,   30, 10, 0,   2, 0, 2,   2, 0, 0},   // Mid intensity
-  {0, 30, 50,   40, 10, 0,   5, 0, 5,   5, 0, 0},   // High intensity
+  {20, 20, 0,   0, 5, 35,   1, 1, 1,   1, 0, 0},   // Low intensity
+  {30, 30, 0,   0, 17, 43,  2, 2, 2,   2, 0, 0},   // Mid intensity
+  {40, 40, 0,   0, 20, 60,  5, 5, 5,   5, 0, 0},   // High intensity
  },
 // Map 1, Captain America
  {
-  {40, 0, 0,   0, 0, 40,    1, 1, 1,   1, 1, 1},   // Low intensity
-  {60, 0, 0,   0, 0, 60,    2, 2, 2,   2, 2, 2},   // Mid intensity
-  {80, 0, 0,   0, 0, 80,    3, 3, 3,   3, 3, 3},   // High intensity
+  {40, 0, 0,    0, 0, 40,    1, 1, 1,   1, 1, 1},   // Low intensity
+  {60, 0, 0,    0, 0, 60,    2, 2, 2,   2, 2, 2},   // Mid intensity
+  {80, 0, 0,    0, 0, 80,    3, 3, 3,   3, 3, 3},   // High intensity
  },
-// Map 2, Joker
+// Map 2, Joker Old
  {
-  {40, 0, 0,   0, 40, 0,    1, 1, 1,   1, 0, 2},   // Low intensity
-  {60, 0, 0,   0, 60, 0,    2, 2, 2,   2, 0, 4},   // Mid intensity
-  {80, 0, 0,   0, 80, 0,    3, 3, 3,   3, 0, 6},   // High intensity
+  {40, 0, 0,    0, 40, 0,    1, 1, 1,   1, 0, 2},   // Low intensity
+  {60, 0, 0,    0, 60, 0,    2, 2, 2,   2, 0, 4},   // Mid intensity
+  {80, 0, 0,    0, 80, 0,    3, 3, 3,   3, 0, 6},   // High intensity
  },
-// Map 3, Dr Strange
+// Map 3, Joker New
  {
-  {0, 0, 40,   20, 20, 0,    1, 0, 0,   1, 0, 0},   // Low intensity
-  {0, 0, 60,   30, 30, 0,    2, 0, 0,   2, 0, 0},   // Mid intensity
-  {0, 0, 80,   40, 40, 0,    5, 0, 0,   5, 0, 0},   // High intensity
+  {40, 0, 0,    0, 0, 40,    2, 1, 0,   4, 1, 0},   // Low intensity
+  {60, 0, 0,    0, 0, 60,    4, 2, 0,   6, 2, 0},   // Mid intensity
+  {80, 0, 0,    0, 0, 80,    6, 3, 0,   8, 3, 0},   // High intensity
  },
-// Map 4, Cool blue
+// Map 4, Dr Strange
  {
-  {0, 10, 30,   0, 0, 30,    0, 0, 1,   0, 0, 1},   // Low intensity
-  {0, 20, 40,   0, 0, 50,    0, 0, 2,   0, 0, 2},   // Mid intensity
-  {0, 30, 50,   0, 0, 70,    0, 0, 5,   0, 0, 5},   // High intensity
+  {20, 20, 0,   0, 0, 40,    1, 0, 0,   1, 0, 0},   // Low intensity
+  {30, 30, 0,   0, 0, 60,    2, 0, 0,   2, 0, 0},   // Mid intensity
+  {40, 40, 0,   0, 0, 80,    5, 0, 0,   5, 0, 0},   // High intensity
  },
-// Map 5, Firy red
+// Map 5, Purple love
+ {
+  {0, 10, 30,   15, 0, 30,    1, 0, 2,   1, 0, 2},   // Low intensity
+  {0, 20, 40,   25, 0, 40,    2, 0, 4,   2, 0, 4},   // Mid intensity
+  {0, 30, 50,   35, 0, 50,    3, 0, 6,   3, 0, 6},   // High intensity
+ },
+// Map 6, Crystal blue
+ {
+  {15, 15, 0,   0, 15, 15,    0, 1, 1,   0, 1, 1},   // Low intensity
+  {25, 25, 0,   0, 25, 25,    0, 2, 2,   0, 2, 2},   // Mid intensity
+  {35, 35, 0,   0, 35, 35,    0, 3, 3,   0, 3, 3},   // High intensity
+ },
+// Map 7, Cool blue
+ {
+  {10, 10, 10,   0, 0, 30,    0, 0, 1,   0, 0, 1},   // Low intensity
+  {17, 17, 17,   0, 0, 50,    0, 0, 2,   0, 0, 2},   // Mid intensity
+  {23, 23, 23,   0, 0, 70,    0, 0, 5,   0, 0, 5},   // High intensity
+ },
+// Map 8, Firy red
  {
   {30, 10, 0,   30, 0, 0,    1, 0, 0,   1, 0, 0},   // Low intensity
   {40, 20, 0,   50, 0, 0,    2, 0, 0,   2, 0, 0},   // Mid intensity
   {50, 30, 0,   70, 0, 0,    5, 0, 0,   5, 0, 0},   // High intensity
  },
-// Map 6, Emerald green
+// Map 9, Emerald green
  {
-  {0, 30, 10,   0, 30, 0,    0, 1, 0,   0, 1, 0},   // Low intensity
-  {0, 40, 20,   0, 50, 0,    0, 2, 0,   0, 2, 0},   // Mid intensity
-  {0, 50, 30,   0, 70, 0,    0, 5, 0,   0, 5, 0},   // High intensity
+  {0, 20, 20,   0, 30, 0,    0, 1, 0,   0, 1, 0},   // Low intensity
+  {0, 30, 30,   0, 50, 0,    0, 2, 0,   0, 2, 0},   // Mid intensity
+  {0, 40, 40,   0, 70, 0,    0, 5, 0,   0, 5, 0},   // High intensity
  },
-// Map 7, Purple love
+// Map 10, Yellow submarine
  {
-  {30, 0, 40,   15, 0, 30,    1, 0, 2,   1, 0, 2},   // Low intensity
-  {40, 0, 50,   25, 0, 40,    2, 0, 4,   2, 0, 4},   // Mid intensity
-  {50, 0, 60,   35, 0, 50,    3, 0, 6,   3, 0, 6},   // High intensity
+  {5, 35, 0,   15, 15, 0,    1, 1, 0,   1, 1, 0},   // Low intensity
+  {10, 50, 0,   25, 25, 0,    2, 2, 0,   2, 2, 0},   // Mid intensity
+  {20, 60, 0,   35, 35, 0,    3, 3, 0,   3, 3, 0},   // High intensity
  },
-// Map 8, Yellow submarine
+// Map 11, Cheshire Cat
  {
-  {15, 30, 0,   15, 15, 0,    1, 1, 0,   1, 1, 0},   // Low intensity
-  {25, 40, 0,   25, 25, 0,    2, 2, 0,   2, 2, 0},   // Mid intensity
-  {35, 50, 0,   35, 35, 0,    3, 3, 0,   3, 3, 0},   // High intensity
+  {0, 10, 30,   0, 30, 0,    1, 1, 1,   0, 0, 0},   // Low intensity
+  {0, 20, 40,   0, 50, 0,    2, 2, 2,   0, 0, 0},   // Mid intensity
+  {0, 30, 50,   0, 70, 0,    3, 3, 3,   0, 0, 0},   // High intensity
  },
-// Map 9, Crystal blue
+// Map 12, Dali
  {
-  {0, 15, 30,   0, 15, 15,    0, 1, 1,   0, 1, 1},   // Low intensity
-  {0, 25, 40,   0, 25, 25,    0, 2, 2,   0, 2, 2},   // Mid intensity
-  {0, 35, 50,   0, 35, 35,    0, 3, 3,   0, 3, 3},   // High intensity
+  {15, 15, 0,   0, 15, 15,    0, 0, 0,   0, 0, 0},   // Low intensity
+  {25, 25, 0,   0, 25, 25,    0, 0, 0,   0, 0, 0},   // Mid intensity
+  {35, 35, 0,   0, 35, 35,    0, 0, 0,   0, 0, 0},   // High intensity
  },
 };
+
 
 ts t; //ts is a struct findable in ds3231.h
 uint32_t color;
@@ -315,10 +334,13 @@ void runSetM(uint8_t buttonPressed)
   uint8_t ledM;
   
   DS3231_get(&t);
-  t.min += buttonPressed;
-  if (t.min > 59) t.min = 0;
-  t.sec = 0;
-  DS3231_set(t);
+  if (buttonPressed != 0)
+  {
+    t.min += 1;
+    if (t.min > 59) t.min = 0;
+    t.sec = 0;
+    DS3231_set(t);
+  }
 
   ledM = (t.min / 10) * 4;
   
@@ -379,9 +401,10 @@ void runSetBrightness(uint8_t thrIdx, uint8_t buttonPressed)
 void runClock()
 {
   static unsigned long lastRefresh = 0;
+  static uint8_t displayCounter = 0;
   static uint8_t old_ledM = 0;
   static uint8_t ledH = 0, ledM = 0;
-  
+
   if ((millis() - lastRefresh) >= 500)
   {
     lastRefresh = millis();
@@ -395,7 +418,6 @@ void runClock()
     strip.show();
   }
 }
-
 
 void showClock(uint8_t ledH, uint8_t ledM)
 {
@@ -438,7 +460,7 @@ void showAnimation()
   // draw smile
   for (i = 16; i > 7; i--)
   {
-    setColor(i, colorM[colorIdx]);   
+    setColor(i, colorH[colorIdx]);   
     strip.show();
     delay(100);
   }
